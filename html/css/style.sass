@@ -1,0 +1,437 @@
+@import _sass_globals.sass
+
+// Header Styling
+.header
+  font-family: $heading-font
+  font-style: $font-weight
+  position: fixed
+  display: block
+  top: 0
+  left: 0
+  right: 0
+  padding: $two-grid
+  background-color: $hnr-orange
+  color: $hnr-light
+  box-shadow: 0 0 $grid $half-grid rgba(0,0,0,0.1)
+
+  span
+    display: block
+    margin: 0 auto
+    width: 80%
+    text-align: center
+
+
+// Story styling
+.stories
+  display: block
+  margin: 0 auto
+  width: 50%
+  margin-top: $grid * 10
+
+  span
+    padding: $two-grid
+    border: 1px solid black
+    display: block
+    margin-top: $two-grid
+    border-radius: 1px
+
+  em
+    display: block
+    font-family: $heading-font
+    color: #797373
+    margin-top: 2px
+
+  label
+    display: block
+    word-wrap: break-word
+    color: $hnr-dark
+    font-family: $body-font
+    font-size: $three-grid
+
+  em,
+  label
+    margin-left: $two-grid
+
+  .link
+    text-decoration: none
+    display: block
+    transition: 0.2s all
+    -webkit-transition: 0.2s all
+
+  .link:hover
+    background-color: #F1F1F1
+
+  .link:hover,
+  label:hover,
+  em:hover
+    cursor: pointer
+
+
+// Loading screen styles
+.loadscreen
+  display: none
+  position: fixed
+  z-index: 10
+  background-color: white
+  background-color: rgba(255,255,255,0.8)
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+
+  button
+    -webkit-appearance: none
+    display: block
+    margin: 0 auto
+    border: none
+    border-radius: 1px
+    padding: $grid
+    background-color: #EE7C72
+    color: $hnr-light
+    font-size: ($grid * 1.5)  
+
+  img
+    display: block
+    margin: 0 auto
+    margin-top: $grid * 12.5
+    width: 30px
+
+  span
+    display: block
+    margin: 0 auto
+    width: 25%
+    text-align: center
+    padding: $four-grid
+    font-family: $body-font
+    font-weight: 700
+    color: #B8ACAC
+
+
+// Story body styles
+.hnr-story
+  transition: ease-in-out 1.5s all
+  -webkit-transition: ease-in-out 1.5s all
+  display: block
+  position: fixed
+  left: 15%
+  right: 15%
+  bottom: 10px
+  overflow: scroll
+  -webkit-overflow-scrolling: touch
+  border: 1px solid rgb(228, 216, 216)
+  padding: 0 $four-grid
+  background-color: #FCF8F8
+  box-shadow: 0 0 100px rgba(0,0,0,0.28)
+  padding-bottom: $six-grid
+
+  em:hover
+    opacity: 0.89
+  
+  a
+    text-decoration: none
+
+  a:hover
+    opacity: 0.8
+
+  img
+    display: block
+    margin: 0 auto
+    width: 70%
+    border: $grid solid #DCDCDD
+    box-shadow: 0 0 $half-grid rgba(0,0,0,0.1)
+    margin-top: $four-grid
+
+  pre
+    display: block
+    border: 1px solid
+    padding: $grid
+    font-size: $grid * 1.5
+    overflow: scroll
+    background-color: rgb(243, 243, 243)
+    color: $hnr-dark
+
+  h1,
+  h2
+    font-size: $three-grid
+
+  code
+    font-size: $two-grid    
+
+.hnr-story.visible
+  top: $six-grid
+
+.hnr-story.invisible
+  top: 3000px
+
+
+.story-close
+  display: none
+  position: fixed
+  font-style: normal
+  background-color: rgb(73, 71, 71)
+  cursor: pointer
+  height: $three-grid
+  width: $two-grid
+  color: $hnr-light
+  text-align: center
+  line-height: $two-grid
+  font-family: "Arial", sans-serif
+  margin-top: 0px
+  padding: 2px
+  transition: 0.2s all
+  -webkit-transition: 0.2s all
+  top: $six-grid
+  right: 12%
+
+.story-title
+  font-family: $body-font
+  color: rgb(68, 66, 66)
+  margin: ($grid * 1.5) 0 0 0px
+  font-size: $four-grid
+
+.story-source
+  font-family: $body-font
+  font-weight: bold
+  font-size: $two-grid
+  color: $hnr-dark
+  display: block
+  width: 120px
+  margin: 6px 0
+
+.story-body
+  font-family: $body-font
+  font-size: 18px
+  line-height: 22px
+  font-weight: $font-weight
+
+.credit
+  display: block
+  padding-top: $two-grid
+  width: 50%
+  text-align: center
+  margin: 0 auto
+  margin-top: $two-grid
+  margin-bottom: $two-grid
+  font-size: 14px
+
+// Button styling
+.hnr-share-button
+  font-family: $body-font
+  text-decoration: none
+  font-size: ($grid * 1.5)
+  padding: 6px ($grid * 1.5)
+  color: $hnr-light
+  border-radius: 1px
+
+.hnr-twitter-button,
+.hnr-facebook-button
+  display: inline-block
+  width: 60px
+  margin: 0 $two-grid
+
+.hnr-twitter-button
+  background-color: #64C6EC
+
+.hnr-facebook-button
+  background-color: #2074A3
+
+.hnr-new-window-button,
+.hnr-new-window-button:visited 
+  display: block
+  width: 120px
+  color: $hnr-dark
+  text-align: center
+  margin: 6px 0
+  font-weight: 400
+  border: 1px solid
+  background-color: rgba(51, 51, 51, 0.05)
+
+.story-buttons
+  display: block
+  position: fixed
+  left: 0
+  right: 0
+  padding: $two-grid
+  margin-bottom: $four-grid
+  text-align: center
+  transition: 3s
+  -webkit-transition: 3s
+
+.story-buttons.visible
+  bottom: 0
+
+.story-buttons.invisible
+  bottom: -500px
+
+
+/* Smartphones (portrait and landscape) ----------- */
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px)
+
+  .header
+    padding: $four-grid
+    font-size: 72px
+
+  .stories
+    display: block
+    margin: 0 auto
+    width: 95%
+    margin-top: 200px
+
+  .link
+    text-decoration: none
+    display: block
+    transition: 0.2s all
+    -webkit-transition: 0.2s all
+    margin-bottom: $four-grid
+
+  .stories em
+    font-size: 44px
+
+  .stories label
+    font-size: 66px
+
+  .loadscreen
+    background-color: rgba(255,255,255,0.95)
+
+    img
+      margin-top: 200px
+      width: 60px
+
+    span
+      width: 90%
+      font-size: 66px
+
+  .story-close
+    font-size: 70px
+    padding: $two-grid
+    vertical-align: middle
+    width: 75px
+    height: 75px
+    right: 20px
+    top: 20px
+    line-height: 60px
+
+  .hnr-story
+    left: 0px
+    right: 0px
+    bottom: 0px
+    padding-bottom: 120px
+
+    em:hover
+      opacity: 0.89
+
+    h1,
+    h2
+      font-size: 72px
+
+    img
+      width: 80%
+
+    code
+      font-size: 44px    
+  
+  .hnr-story.visible
+    top: 150
+
+  .story-title
+    margin-top: 70px
+    font-size: 72px
+
+  .story-source
+    font-size: 44px
+    margin-bottom: $four-grid
+
+  .story-body
+    font-size: 66px
+    line-height: 88px
+    color: $hnr-dark
+
+  .credit
+    font-size: $four-grid
+
+  .hnr-share-button
+    padding: $two-grid $six-grid
+    font-size: $six-grid
+
+  .hnr-twitter-button,
+  .hnr-facebook-button
+    width: 250px
+
+  .hnr-new-window-button
+    width: 350px
+    margin: $two-grid 0
+
+  .story-buttons
+    margin-bottom: 30px
+
+  .loadscreen button
+    font-size: 54px
+    padding: $four-grid
+    font-family: $heading-font
+    font-weight: $font-weight
+    margin-top: 50px
+
+
+/* Smartphones (landscape) ----------- */
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape)
+
+  .header
+    padding: $two-grid
+    font-size: 50px
+
+  .stories
+    margin-top: 100px
+
+    em
+      font-size: $four-grid
+
+    label
+      font-size: $six-grid
+
+  .loadscreen img
+    margin-top: 150px
+    width: 40px
+
+  .loadscreen span
+    font-size: 44px
+
+  .hnr-story
+    left: 0px
+    right: 0px
+    bottom: 0px
+
+  .hnr-story.visible
+    top: 90
+
+  em:hover
+    opacity: 0.89    
+
+  .story-close
+    font-size: $six-grid
+    padding: $two-grid
+    vertical-align: middle
+    width: 55px
+    height: 55px
+    right: 20px
+    top: 0px
+    line-height: $six-grid
+
+
+  .story-title
+    margin-top: 50px
+    font-size: 52px
+
+  .story-source
+    font-size: $four-grid
+    margin-bottom: $four-grid
+
+  .story-body
+    font-size: $six-grid
+    line-height: $six-grid
+    color: $hnr-dark
+
+  .hnr-story.credit 
+    font-size: $four-grid  
+

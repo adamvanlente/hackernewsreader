@@ -1,0 +1,47 @@
+<html>
+<head>
+
+<title>hackernewsreader</title>
+<meta name="keywords" content="hacker news reader">
+<meta name="description" content="A Hacker News feed RSS Reader">
+<meta name="apple-mobile-web-app-title" content="HNR">
+
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Josefin+Slab:300,600,300italic,600italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+<link href="images/favicon.ico" rel="shortcut icon" />
+<link href="images/startup-image.png" rel="apple-touch-startup-image">
+<link href="images/apple-touch-icon-iphone-precomposed.png" rel="apple-touch-icon">
+
+</head>
+ <body>
+
+  <div id="header" class="header">
+   <span>hacker news reader</span>
+  </div>
+
+  <div id="stories" class="stories"></div>
+
+  <div id="loadscreen" class="loadscreen">
+   <img src="images/spiffygif_44x44.gif"/>
+   <span>loading story</span>
+   <button onclick="hn.closeStory()">&larr; abort</button>
+  </div>
+
+  <div id="story-close" class="story-close" onclick="hn.closeStory()">x</div>
+
+  <div id="story" class="hnr-story invisible">
+   <h1 id="story-title" class="story-title"></h1>
+   <h2 id="story-source" class="story-source"></h2>
+   <span id="story-body" class="story-body"></span>
+  </div>
+
+  <span id="story-buttons" class="story-buttons invisible"></span>
+
+  <script type="text/javascript" src="js/utils.js"></script>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+
+ </body>
+
+</html>
