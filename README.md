@@ -10,7 +10,6 @@ I like to keep up with Hacker News each day, but their site is difficult to navi
     reader.py : parses feeds, returns json objects for list of stories and individual stories.
   /html
     index.html
-    README.md
     /css : styles using sass
       _sass_globals.js
       style.sass
@@ -22,4 +21,5 @@ I like to keep up with Hacker News each day, but their site is difficult to navi
       jquery.js : v1.10.0
       script.js : makes calls to hnr 'api' and renders json data in the browser
       utils.js : quick dom manipulation
+  README.md
 </pre>
